@@ -37,4 +37,7 @@ LearnRails::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
+  # Send email in development mode.
+  config.action_mailer.perform_deliveries = true
+
 end
